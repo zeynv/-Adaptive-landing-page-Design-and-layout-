@@ -1,0 +1,967 @@
+@import url(assets/css/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+} */
+
+:root {
+    --color-primary-background: #EEEFF1;
+    --color-secondary-background: #34547A;
+    --color-secondary-background-hover: #1a324f;
+    --color-white-background: #F9F9F9;
+
+    --color-black: #000;
+    --color-white: #fff;
+
+    --color-gray: #727272;
+
+    --transition-time: 0.3s;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: var(--color-primary-background);
+    min-height: 700px;
+}
+
+.header-container {
+    max-width: 1125px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: var(--color-secondary-background);
+    color: var(--color-white);
+    padding: 25px 41px;
+    text-transform: uppercase;
+    transition: background-color var(--transition-time);
+}
+
+.description {
+    color: var(--color-gray);
+    line-height: 164%;
+}
+
+/* Шапка */
+
+.header-container-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 62px;
+}
+
+.header-container-top__ul {
+    display: flex;
+    column-gap: 42px;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    margin-right: 8px;
+    text-transform: uppercase;
+}
+
+.header-container-top__li {
+    transition: color var(--transition-time);
+}
+
+.header-container-top__li_active {
+    font-weight: 500;
+    color: var(--color-secondary-background);
+}
+
+/* Основное содержимое первого блока */
+
+.header-container-content {
+    display: flex;
+    padding-top: 150px;
+    margin-left: 80px;
+}
+
+.header-container-content__text {
+    letter-spacing: 0;
+    padding-left: 130px;
+}
+
+.header-container-content__title {
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.header-container-content__desc {
+    max-width: 540px;
+    margin-bottom: 48px;
+}
+
+.header-container-content__btn {
+    letter-spacing: 0.1em;
+    display: inline-block;
+
+}
+
+/* Секция "Обо мне" */
+
+.about-me {
+    min-height: 366px;
+}
+
+.about-me-content {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 115px;
+    max-width: 540px;
+}
+
+.about-me-content__title {
+    font-size: 32px;
+}
+
+.about-me-content__desc {
+    padding-top: 38px;
+}
+
+/* секция с информацией  */
+
+.info-block {
+    background-color: var(--color-secondary-background);
+    padding: 90px 0;
+    padding-left: 30px;
+    min-height: 250px;
+}
+
+.info-block-content {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.info-block-content__item {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    color: var(--color-white);
+}
+
+.info-block-content__title {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.info-block-content__desc {}
+
+/* Мои навыки */
+
+.my-skills-content__progress {
+    position: relative;
+    height: 4px;
+    display: block;
+    width: 445px;
+    background-color: #c4c4c4;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+.my-skills-content__progress::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    height: 4px;
+    background-color: var(--color-secondary-background);
+}
+
+.my-skills {
+    min-height: 653px;
+    padding: 101px 0;
+}
+
+.my-skills-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-skills-content__text {}
+
+.my-skills-content__title {
+    font-weight: 500;
+    font-size: 32px;
+    padding-top: 19px;
+    margin-bottom: 38px;
+}
+
+.my-skills-content__info {}
+
+.my-skills-content__p {
+    margin-bottom: 19px;
+}
+
+.my-skills-content__img {
+    width: 555px;
+    height: 450px;
+}
+
+/* Секция с видео */
+
+
+.video-section {
+    background-color: var(--color-primary-background);
+    min-height: 1004px;
+    padding: 93px 0 100px;
+}
+
+.video-section-content {}
+
+.video-section-content__text {
+    text-align: center;
+}
+
+.video-section-content__title {
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 42px;
+}
+
+.video-section-content-desc {
+    margin: 0 auto;
+    line-height: 164%;
+    max-width: 540px;
+}
+
+.video-section-content__clip iframe {
+    padding-top: 48px;
+    padding-left: 20px;
+    margin: 0 auto;
+    width: 1130px;
+    height: 650px;
+}
+
+/* Галерея */
+
+.gallery {
+    padding: 20px 0;
+}
+
+.gallery-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-content__image img {
+    max-width: 100%;
+}
+
+.materialboxed {
+    display: block;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+    position: relative;
+    /* -webkit-transition: opacity .4s;
+    transition: opacity .4s; */
+}
+
+.gallery-content__image {
+    position: relative;
+}
+
+.gallery-content__image::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-secondary-background-hover) url("assets/img/view.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.materialboxed.active {
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out;
+}
+
+#materialbox-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+    will-change: opacity;
+}
+
+.materialbox-caption {
+    position: fixed;
+    display: none;
+    color: #fff;
+    line-height: 50px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0% 15%;
+    height: 50px;
+    z-index: 1000;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* клиенты */
+
+.clients {
+    min-height: 273px;
+    padding: 52px 0 65px 32px;
+}
+
+.clients-content {
+    padding: 0 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.clients-content__item {
+    height: 120px;
+    width: 100%;
+}
+
+/* форма */
+
+.contacts {
+    background-color: var(--color-primary-background);
+    min-height: 762px;
+    padding: 94px 0 100px;
+}
+
+.contacts-content {}
+
+.contacts-content__text {
+    text-align: center;
+    margin-bottom: 57px;
+
+}
+
+.contacts-content__title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 34px;
+}
+
+.contacts-content__desc {
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.contacts-content__form {}
+
+.contacts-content__grid-form {
+    display: grid;
+    max-width: 540px;
+    column-gap: 30px;
+    row-gap: 20px;
+    grid-template-areas:
+        "name mail"
+        "msg msg";
+    ;
+    margin: 0 auto 50px;
+    font-size: 14px;
+}
+
+.contacts-content__grid-form input {
+    min-height: 50px;
+    padding: 0 20px;
+    border: none;
+}
+
+.contacts-content__grid-form textarea {
+    min-height: 175px;
+    padding: 15px 20px;
+    border: none;
+    max-width: 540px;
+    resize: none;
+}
+
+.contacts-content__input_name {
+    grid-area: name;
+}
+
+.contacts-content__input_mail {
+    grid-area: mail;
+}
+
+.contacts-content__input_msg {
+    grid-area: msg;
+}
+
+.contacts-content__btn {
+    display: block;
+    padding: 20px 45px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--color-white);
+    background-color: var(--color-secondary-background);
+    margin: 0 auto;
+    transition: background-color var(--transition-time);
+}
+
+/* футер */
+
+.footer {
+    background-color: var(--color-secondary-background);
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-content__text {
+    color: white;
+}
+
+.footer-content__title {
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.footer-content__desc {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.footer-content__icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* Медиа-запросы */
+
+@media(hover:hover) {
+    .header-container-top__li:hover {
+        color: var(--color-secondary-background);
+    }
+
+    .header-container-top__li_active:hover {
+        color: var(--color-secondary-background-hover);
+    }
+
+    .button:hover {
+        background-color: var(--color-secondary-background-hover);
+    }
+
+    .gallery-content__image:hover:not(.active)::after {
+        opacity: 0.6;
+    }
+
+    .contacts-content__btn:hover {
+        background-color: var(--color-secondary-background-hover);
+    }
+}
+
+@media (max-width: 1280px) {
+    /* Основное содержимое первого блока */
+
+    .header-container-content__text {
+        letter-spacing: 0;
+        padding-left: 50px;
+    }
+
+    .header-container-content {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0px;
+        padding: 0 10px;
+        padding-top: 150px;
+    }
+
+    /* секция с информацией  */
+
+    .info-block {
+        background-color: var(--color-secondary-background);
+        padding: 90px 0;
+        padding-left: 0px;
+    }
+
+    .info-block-content {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .info-block-content__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* Мои навыки */
+
+    .my-skills-content__progress {
+        position: relative;
+        height: 4px;
+        display: block;
+        width: calc(40vw - 50%);
+        background-color: #c4c4c4;
+        border-radius: 2px;
+        margin-bottom: 20px;
+    }
+
+    .my-skills {
+        min-height: 653px;
+        padding: 101px 20px;
+    }
+
+    .my-skills-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .my-skills-content__img {
+        width: 50%;
+        height: 50%;
+        display: inline-block;
+        padding: 0;
+    }
+
+    /* Секция с видео */
+
+    .video-section {
+        background-color: var(--color-primary-background);
+        min-height: 1004px;
+        padding: 93px 10px 100px;
+    }
+
+    .video-section-content__clip iframe {
+        padding-top: 48px;
+        padding-left: 0px;
+        margin: 0 auto;
+        width: 100%;
+        height: 650px;
+    }
+
+    /* клиенты */
+
+    .clients {
+        min-height: 292px;
+        padding: 52px 0 100px 0px;
+    }
+
+    .clients-content {
+        padding: 0 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .clients-content__item {
+        width: 255px;
+        margin: 0 auto;
+    }
+
+
+}
+
+@media (max-width: 880px) {
+
+    /* Шапка */
+
+    .header-container {
+        max-width: 1125px;
+        padding: 0 10px 40px;
+        margin: 0 auto;
+    }
+
+    .header-container-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 50px;
+        padding-top: 62px;
+    }
+
+    .header-container-top__li {
+        padding: 20px 0;
+    }
+
+    .header-container-top__ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 42px;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        margin-right: 8px;
+        text-transform: uppercase;
+    }
+
+    /* Основное содержимое первого блока */
+
+    .header-container-content {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    .header-container-content__img {
+        width: 50%;
+        margin: 0 auto;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .header-container-content__text {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .header-container-content__text {
+        padding-left: 0;
+    }
+
+    .header-container-content__desc {
+        margin: 0 auto;
+        max-width: 540px;
+        margin-bottom: 48px;
+    }
+
+    .header-container-content__btn {
+        letter-spacing: 0.1em;
+        display: inline-block;
+    }
+
+    /* секция с информацией  */
+
+    .info-block-content {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Мои навыки */
+
+    .my-skills {
+        min-height: 653px;
+        padding: 60px 20px;
+    }
+
+    .my-skills-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .my-skills-content__progress {
+        position: relative;
+        height: 4px;
+        display: block;
+        width: 350px;
+        background-color: #c4c4c4;
+        border-radius: 2px;
+        margin-bottom: 20px;
+    }
+
+    .my-skills-content__text {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .my-skills-content__title {
+        font-weight: 500;
+        font-size: 32px;
+        padding-top: 19px;
+        margin-bottom: 38px;
+    }
+
+    .my-skills-content__p {
+        margin-bottom: 19px;
+    }
+
+    .my-skills-content__img {
+        width: 70vw;
+    }
+
+    /* галерея */
+
+    .gallery-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* клиенты */
+
+    .clients-content {
+        grid-template-columns: 1fr;
+    }
+
+    .clients-content__item {
+        width: 255px;
+        margin: 0 auto;
+    }
+
+
+    /* форма */
+
+    .contacts {
+        background-color: var(--color-primary-background);
+        min-height: 762px;
+        padding: 94px 0 100px;
+    }
+
+    .contacts-content {
+        padding: 0 20px;
+    }
+
+    .contacts-content__text {
+        text-align: center;
+        margin-bottom: 57px;
+
+    }
+
+    .contacts-content__title {
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 34px;
+    }
+
+    .contacts-content__desc {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    .contacts-content__form {}
+
+    .contacts-content__grid-form {
+        display: grid;
+        max-width: 540px;
+        column-gap: 30px;
+        row-gap: 20px;
+        grid-template-areas:
+            "name"
+            "mail"
+            "msg";
+        ;
+        margin: 0 auto 50px;
+        font-size: 18px;
+    }
+
+    .contacts-content__grid-form input {
+        min-height: 50px;
+        padding: 0 20px;
+        border: none;
+    }
+
+    .contacts-content__grid-form textarea {
+        min-height: 175px;
+        padding: 15px 20px;
+        border: none;
+        max-width: 540px;
+        resize: none;
+    }
+
+    .contacts-content__input_name {
+        grid-area: name;
+    }
+
+    .contacts-content__input_mail {
+        grid-area: mail;
+    }
+
+    .contacts-content__input_msg {
+        grid-area: msg;
+    }
+
+    .contacts-content__btn {
+        display: block;
+        padding: 20px 45px;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        margin: 0 auto;
+        text-align: center;
+        color: var(--color-white);
+        background-color: var(--color-secondary-background);
+        margin: 0 auto;
+        transition: background-color var(--transition-time);
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+    /* Секция "Обо мне" */
+
+    .about-me {
+        min-height: 386px;
+    }
+
+    .about-me-content {
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 115px;
+        max-width: 540px;
+    }
+
+    .about-me-content__title {
+        font-size: 32px;
+    }
+
+    .about-me-content__desc {
+        padding-top: 38px;
+    }
+
+    /* секция с информацией  */
+
+    .info-block {
+        background-color: var(--color-secondary-background);
+        padding: 60px 0;
+        padding-left: 0px;
+    }
+
+    .info-block-content {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .info-block-content__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Мои навыки */
+
+    .my-skills {
+        min-height: 653px;
+        padding: 60px 20px;
+    }
+
+    .my-skills-content__progress {
+        position: relative;
+        height: 4px;
+        display: block;
+        width: 300px;
+        background-color: #c4c4c4;
+        border-radius: 2px;
+        margin-bottom: 20px;
+    }
+
+    .my-skills-content__img {
+        width: 90vw;
+    }
+
+    /* Секция с видео */
+
+    .video-section {
+        background-color: var(--color-primary-background);
+        min-height: 1004px;
+        padding: 93px 10px 100px;
+    }
+
+    .video-section-content__clip iframe {
+        padding-top: 48px;
+        padding-left: 0px;
+        margin: 0 auto;
+        width: 100%;
+        height: 350px;
+    }
+
+
+    .video-section {
+        background-color: var(--color-primary-background);
+        min-height: 600px;
+        padding: 93px 0 100px;
+    }
+
+    /* галерея */
+
+    .gallery-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+
+    /* футер */
+
+    .footer {
+        background-color: var(--color-secondary-background);
+        padding: 50px 0;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .footer-content__title {
+        font-size: 21px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .footer-content__desc {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .footer-content__icons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+}
